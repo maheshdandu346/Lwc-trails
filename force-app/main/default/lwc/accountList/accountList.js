@@ -2,7 +2,7 @@ import { LightningElement, wire } from 'lwc';
 import NAME_FIELD from '@salesforce/schema/Account.Name';
 import REVENUE_FIELD from '@salesforce/schema/Account.AnnualRevenue';
 import INDUSTRY_FIELD from '@salesforce/schema/Account.Industry';
-import getAccounts from '@salesforce/apex/AccountController.getAccounts';
+import getAccounts from '@salesforce/apex/contactController.getAccounts';
 const COLUMNS = [
     { label: 'Account Name', fieldName: NAME_FIELD.fieldApiName, type: 'text' },
     { label: 'Annual Revenue', fieldName: REVENUE_FIELD.fieldApiName, type: 'currency' },
